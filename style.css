@@ -1,0 +1,46 @@
+/* Add mobile responsiveness */
+@media (max-width: 768px) {
+    /* Make the navigation menu vertical on mobile devices */
+    nav ul {
+        flex-direction: column;
+    }
+    /* Make the project images smaller on mobile devices */
+   .project img {
+        width: 50%;
+        height: 50%;
+    }
+}
+
+/* Animation */
+
+.animated-name {
+    animation: typing 2s steps(20) forwards;
+    
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skills-grid li {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.skills-grid li:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+}

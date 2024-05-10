@@ -1,134 +1,183 @@
-<!-- index.html -->
+<!-- project.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
-    <!-- Import Tailwind CSS -->
+    <title>Project | My Portfolio</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
-    <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="style.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&display=swap"
+      rel="stylesheet"
+    >
 </head>
+<!-- class="bg-gray-100 h-screen" -->
 <body class="bg-gray-100 h-screen">
-    <!-- Header section with navigation -->
-    <header class="bg-white py-6">
-        <nav class="container mx-auto flex justify-between items-center">
-            <a href="#" class="text-lg font-bold">My Portfolio</a>
-            <a href="#" class="text-lg font-bold">
-                <span class="animated-name">Sagar Kundu</span>
-            </a>
-            <!-- Logo and navigation links -->
-            <ul class="flex items-center">
-                <!-- Navigation links -->
-                <li class="mr-6"><a href="#" class="text-gray-600 hover:text-gray-900">About</a></li>
-                <li class="mr-6"><a href="#" class="text-gray-600 hover:text-gray-900">Projects</a></li>
-                <li class="mr-6"><a href="#" class="text-gray-600 hover:text-gray-900">Skills</a></li>
-                <li class="mr-6"><a href="#" class="text-gray-600 hover:text-gray-900">Contact</a></li>
-               
-                <!-- Add login and download CV buttons -->
-                <li class="ml-6">
-                    
-                    <!-- Download CV button -->
-                    <button class="bg-green-500 hover:bg-green-700 text-white font-bold py-2 px-4 rounded" id="download-cv">Download CV</button>
-                </li>
+    <header class="header mf1-position-relative js-header " style="position: fixed;">
+        <div class="header__container mf1-container mf1-max-width-lg">
+          <!-- <div class="header__logo"> -->
+            
+                <img src="1.png" alt="" class="dp">
+                <div class="name">Sagar Kundu</div>
+
+          <!-- </div>
+       -->
+          <button class="mf1-btn mf1-btn--subtle header__trigger js-header__trigger" aria-label="Toggle menu" aria-expanded="false" aria-controls="header-nav">
+            <i class="header__trigger-icon" aria-hidden="true"></i>
+            <span>Menu</span>
+          </button>
+      
+          <nav class="header__nav js-header__nav" id="header-nav" role="navigation" aria-label="Main">
+            <div class="header__nav-inner">
+              <div class="header__label">Main menu</div>
+              <ul class="header__list">
+                <li class="header__item"><a href="#0" class="header__link">About</a></li>
+                <li class="header__item"><a href="project.html" class="header__link">Projects</a></li>
+                <li class="header__item"><a href="#0" class="header__link" aria-current="page">Skills</a></li>
+                <li class="header__item"><a href="#0" class="header__link"></a>Thoughts</li>
+                <li class="header__item"><a href="#0" class="header__link">Contact</a></li>
+                <li class="header__item header__item--divider" aria-hidden="true"></li>
+                <li class="header__item"><a href="cv.pdf" class="header__nav-btn mf1-btn mf1-btn--primary">Download</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+    <main class="container mx-auto p-6" style="position:relative;top:70px;">
+      <!-- About section -->
+      <section class="bg-white p-6 mb-6">
+        <h2 class="text-2xl font-bold mb-2">About Me</h2>
+        <p class="text-gray-600">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Minus animi
+          tenetur eaque vitae explicabo consequatur vero accusantium!
+          Reprehenderit doloremque mollitia accusamus similique a distinctio
+          provident ratione ab, dolores perferendis officiis, minus quisquam
+          dignissimos aliquam dolore officia labore veritatis consequatur
+          necessitatibus? Eligendi odio autem minus numquam accusantium ipsum
+          corrupti nemo. Rerum itaque dolor iusto, recusandae eveniet nobis
+          repellendus odit similique blanditiis numquam voluptatibus
+          perspiciatis magnam, voluptate tempora! Consequatur totam odit
+         
+        </p>
+      </section>
+      <!-- Projects section -->
+      <section class="bg-white p-6 mb-6">
+        <h2 class="text-2xl font-bold mb-2">Projects</h2>
+        <ul class="flex flex-wrap -mx-4">
+          <!-- Project 1 -->
+          <li class="w-full md:w-1/2 xl:w-1/3 p-4">
+            <figure class="bg-white rounded shadow-md">
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="Project 1"
+                class="w-full h-full object-cover rounded-t"
+              />
+              <figcaption class="p-4">
+                <h3 class="text-lg font-bold">Project 1</h3>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+          <!-- Project 2 -->
+          <li class="w-full md:w-1/2 xl:w-1/3 p-4">
+            <figure class="bg-white rounded shadow-md">
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="Project 2"
+                class="w-full h-full object-cover rounded-t"
+              />
+              <figcaption class="p-4">
+                <h3 class="text-lg font-bold">Project 2</h3>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+          <!-- Project 3 -->
+          <li class="w-full md:w-1/2 xl:w-1/3 p-4">
+            <figure class="bg-white rounded shadow-md">
+              <img
+                src="https://via.placeholder.com/300x200"
+                alt="Project 3"
+                class="w-full h-full object-cover rounded-t"
+              />
+              <figcaption class="p-4">
+                <h3 class="text-lg font-bold">Project 3</h3>
+                <p class="text-gray-600">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                </p>
+              </figcaption>
+            </figure>
+          </li>
+        </ul>
+      </section>
+      <!-- Skills section -->
+      <section class="bg-white p-6 mb-6">
+        <h2 class="text-2xl font-bold mb-2">Skills</h2>
+        <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+          <!-- Front-end development skills -->
+          <li class="p-4">
+            <h3 class="text-lg font-bold">Front-end Development</h3>
+            <ul class="list-disc pl-4">
+              <li>HTML/CSS</li>
+              <li>JavaScript</li>
+              <li>React</li>
             </ul>
-        </nav>
-    </header>
-    <main class="container mx-auto p-6">
-        <!-- About section -->
-        <section class="bg-white p-6 mb-6">
-            <h2 class="text-2xl font-bold mb-2">About Me</h2>
-            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-        </section>
-        <!-- Projects section -->
-        <section class="bg-white p-6 mb-6">
-            <h2 class="text-2xl font-bold mb-2">Projects</h2>
-            <ul class="flex flex-wrap -mx-4">
-                <!-- Project 1 -->
-                <li class="w-full md:w-1/2 xl:w-1/3 p-4">
-                    <figure class="bg-white rounded shadow-md">
-                        <img src="https://via.placeholder.com/300x200" alt="Project 1" class="w-full h-full object-cover rounded-t">
-                        <figcaption class="p-4">
-                            <h3 class="text-lg font-bold">Project 1</h3>
-                            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <!-- Project 2 -->
-                <li class="w-full md:w-1/2 xl:w-1/3 p-4">
-                    <figure class="bg-white rounded shadow-md">
-                        <img src="https://via.placeholder.com/300x200" alt="Project 2" class="w-full h-full object-cover rounded-t">
-                        <figcaption class="p-4">
-                            <h3 class="text-lg font-bold">Project 2</h3>
-                            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </figcaption>
-                    </figure>
-                </li>
-                <!-- Project 3 -->
-                <li class="w-full md:w-1/2 xl:w-1/3 p-4">
-                    <figure class="bg-white rounded shadow-md">
-                        <img src="https://via.placeholder.com/300x200" alt="Project 3" class="w-full h-full object-cover rounded-t">
-                        <figcaption class="p-4">
-                            <h3 class="text-lg font-bold">Project 3</h3>
-                            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-                        </figcaption>
-                    </figure>
-                </li>
+          </li>
+          <!-- Back-end development skills -->
+          <li class="p-4">
+            <h3 class="text-lg font-bold">Back-end Development</h3>
+            <ul class="list-disc pl-4">
+              <li>Node.js</li>
+              <li>Express</li>
+              <li>MongoDB</li>
             </ul>
-        </section>
-        <!-- Skills section -->
-        <section class="bg-white p-6 mb-6">
-            <h2 class="text-2xl font-bold mb-2">Skills</h2>
-            <ul class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
-                <!-- Front-end development skills -->
-                <li class="p-4">
-                    <h3 class="text-lg font-bold">Front-end Development</h3>
-                    <ul class="list-disc pl-4">
-                        <li>HTML/CSS</li>
-                        <li>JavaScript</li>
-                        <li>React</li>
-                    </ul>
-                </li>
-                <!-- Back-end development skills -->
-                <li class="p-4">
-                    <h3 class="text-lg font-bold">Back-end Development</h3>
-                    <ul class="list-disc pl-4">
-                        <li>Node.js</li>
-                        <li>Express</li>
-                        <li>MongoDB</li>
-                    </ul>
-                </li>
-                <!-- Design skills -->
-                <li class="p-4">
-                    <h3 class="text-lg font-bold">Design</h3>
-                    <ul class="list-disc pl-4">
-                        <li>UI/UX Design</li>
-                        <li>Graphic Design</li>
-                        <li>Branding</li>
-                    </ul>
-                </li>
+          </li>
+          <!-- Design skills -->
+          <li class="p-4">
+            <h3 class="text-lg font-bold">Design</h3>
+            <ul class="list-disc pl-4">
+              <li>UI/UX Design</li>
+              <li>Graphic Design</li>
+              <li>Branding</li>
             </ul>
-        </section>
-        <!-- Contact section -->
-        <section class="bg-white p-6 mb-6">
-            <h2 class="text-2xl font-bold mb-2">Contact</h2>
-            <p class="text-gray-600">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
-        </section>
+          </li>
+        </ul>
+      </section>
+      <!-- Contact section -->
+      <section class="bg-white p-6 mb-6">
+        <h2 class="text-2xl font-bold mb-2">Contact</h2>
+        <p class="text-gray-600">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet
+          nulla auctor, vestibulum magna sed, convallis ex.
+        </p>
+      </section>
     </main>
     <footer class="bg-gray-200 py-6">
-        <p class="text-gray-600 text-center">Copyright 2023 My Portfolio</p>
+      <p class="text-gray-600 text-center">Copyright 2023 My Portfolio</p>
     </footer>
 
     <!-- Add download loader -->
-    <div class="fixed top-0 left-0 w-full h-full bg-gray-200 opacity-50 hidden" id="download-loader">
-        <div class="flex justify-center items-center h-full">
-            <div class="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full" role="status">
-                <span class="sr-only">Loading...</span>
-            </div>
+    <div
+      class="fixed top-0 left-0 w-full h-full bg-gray-200 opacity-50 hidden"
+      id="download-loader"
+    >
+      <div class="flex justify-center items-center h-full">
+        <div
+          class="spinner-border animate-spin inline-block w-8 h-8 border-4 rounded-full"
+          role="status"
+        >
+          <span class="sr-only">Loading...</span>
         </div>
+      </div>
     </div>
 
     <!-- Link to JavaScript file -->
-    <script src="home.js"></script>
-</body>
+    <script src="header.js"></script>
+  </body>
 </html>

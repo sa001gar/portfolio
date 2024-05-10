@@ -1,0 +1,83 @@
+<!-- project.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project | My Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="project.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&display=swap"
+      rel="stylesheet"
+    >
+</head>
+<!-- class="bg-gray-100 h-screen" -->
+<body class="bg-gray-100 h-screen">
+    <header class="header mf1-position-relative js-header ">
+        <div class="header__container mf1-container mf1-max-width-lg">
+          <!-- <div class="header__logo"> -->
+            
+                <img src="1.png" alt="" class="dp">
+                <div class="name">Sagar Kundu</div>
+
+          <!-- </div>
+       -->
+          <button class="mf1-btn mf1-btn--subtle header__trigger js-header__trigger" aria-label="Toggle menu" aria-expanded="false" aria-controls="header-nav">
+            <i class="header__trigger-icon" aria-hidden="true"></i>
+            <span>Menu</span>
+          </button>
+      
+          <nav class="header__nav js-header__nav" id="header-nav" role="navigation" aria-label="Main">
+            <div class="header__nav-inner">
+              <div class="header__label">Main menu</div>
+              <ul class="header__list">
+                <li class="header__item"><a href="#0" class="header__link">About</a></li>
+                <li class="header__item"><a href="#0" class="header__link">Solutions</a></li>
+                <li class="header__item"><a href="#0" class="header__link" aria-current="page">Resources</a></li>
+                <li class="header__item"><a href="#0" class="header__link">Pricing</a></li>
+                <li class="header__item"><a href="#0" class="header__link">Contact</a></li>
+                <li class="header__item header__item--divider" aria-hidden="true"></li>
+                <li class="header__item"><a href="cv.pdf" class="header__nav-btn mf1-btn mf1-btn--primary">Download</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+
+    <main class="container mx-auto p-6">
+        <section class="bg-white p-6 mb-6">
+            <h2 class="text-2xl font-bold mb-2" id="project-title">Project Details</h2>
+            <p class="text-gray-600" id="project-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <img src="https://via.placeholder.com/800x600" alt="Project Image" class="w-full h-full object-cover rounded">
+            <h3 class="text-lg font-bold">Project Description</h3>
+            <p class="text-gray-600" id="project-details">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet nulla auctor, vestibulum magna sed, convallis ex.</p>
+            <ul class="list-disc pl-4" id="project-features">
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+            </ul>
+            <!-- Source code display and copy functionality -->
+            <section class="bg-white p-6 mb-6">
+                <h3 class="text-lg font-bold">Source Code</h3>
+                <div>
+                    <textarea id="source-code" readonly></textarea>
+                </div>
+                <button class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded" id="copy-code" aria-label="Copy Code" role="button">Copy</button>
+            </section>
+            <!-- Preview functionality -->
+            <section class="bg-white p-6 mb-6">
+                <h3 class="text-lg font-bold">Preview</h3>
+                <iframe id="preview" srcdoc="" frameborder="0" width="100%" height="300"></iframe>
+            </section>
+        </section>
+    </main>
+    <footer class="bg-gray-200 py-6">
+        <p class="text-gray-600 text-center">Copyright 2023 My Portfolio</p>
+    </footer>
+
+    <script src="project.js"></script>
+    <script src="header.js"></script>
+</body>
+</html>
