@@ -1,86 +1,53 @@
 <!-- project.html -->
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Project | My Portfolio</title>
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
-    />
-    <link rel="stylesheet" href="project.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="stylesheet" href="style.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Protest+Revolution&family=Protest+Riot&display=swap"
       rel="stylesheet"
-    />
-  </head>
-  <!-- class="bg-gray-100 h-screen" -->
-  <body class="bg-gray-100 h-screen">
-    <header class="header mf1-position-relative js-header">
-      <div class="header__container mf1-container mf1-max-width-lg">
-        <!-- <div class="header__logo"> -->
+    >
+</head>
+<!-- class="bg-gray-100 h-screen" -->
+<body class="bg-gray-100 h-screen"style="height:1400px;">
+    <header class="header mf1-position-relative js-header " style="position: fixed;">
+        <div class="header__container mf1-container mf1-max-width-lg">
+          <!-- <div class="header__logo"> -->
+            
+                <img src="1.png" alt="" class="dp">
+                <div class="name">Sagar Kundu</div>
 
-        <img src="1.png" alt="" class="dp" />
-        <div class="name">Sagar Kundu</div>
-
-        <!-- </div>
+          <!-- </div>
        -->
-        <button
-          class="mf1-btn mf1-btn--subtle header__trigger js-header__trigger"
-          aria-label="Toggle menu"
-          aria-expanded="false"
-          aria-controls="header-nav"
-        >
-          <i class="header__trigger-icon" aria-hidden="true"></i>
-          <span>Menu</span>
-        </button>
-
-        <nav
-          class="header__nav js-header__nav"
-          id="header-nav"
-          role="navigation"
-          aria-label="Main"
-        >
-          <div class="header__nav-inner">
-            <div class="header__label">Main menu</div>
-            <ul class="header__list">
-              <li class="header__item">
-                <a href="#0" class="header__link">About</a>
-              </li>
-              <li class="header__item">
-                <a href="#0" class="header__link">Solutions</a>
-              </li>
-              <li class="header__item">
-                <a href="#0" class="header__link" aria-current="page"
-                  >Resources</a
-                >
-              </li>
-              <li class="header__item">
-                <a href="#0" class="header__link">Pricing</a>
-              </li>
-              <li class="header__item">
-                <a href="#0" class="header__link">Contact</a>
-              </li>
-              <li
-                class="header__item header__item--divider"
-                aria-hidden="true"
-              ></li>
-              <li class="header__item">
-                <a
-                  href="cv.pdf"
-                  class="header__nav-btn mf1-btn mf1-btn--primary"
-                  >Download</a
-                >
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </header>
+          <button class="mf1-btn mf1-btn--subtle header__trigger js-header__trigger" aria-label="Toggle menu" aria-expanded="false" aria-controls="header-nav">
+            <i class="header__trigger-icon" aria-hidden="true"></i>
+            <span>Menu</span>
+          </button>
+      
+          <nav class="header__nav js-header__nav" id="header-nav" role="navigation" aria-label="Main">
+            <div class="header__nav-inner">
+              <div class="header__label">Main menu</div>
+              <ul class="header__list">
+                <li class="header__item"><a href="#0" class="header__link">About</a></li>
+                <li class="header__item"><a href="project.html" class="header__link">Projects</a></li>
+                <li class="header__item"><a href="#0" class="header__link" aria-current="page">Skills</a></li>
+                <li class="header__item"><a href="#0" class="header__link"></a>Thoughts</li>
+                <li class="header__item"><a href="#0" class="header__link">Contact</a></li>
+                <li class="header__item header__item--divider" aria-hidden="true"></li>
+                <li class="header__item"><a href="cv.pdf" class="header__nav-btn mf1-btn mf1-btn--primary">Download</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </header>
 
     <main class="container mx-auto p-6">
-      <section class="bg-white p-6 mb-6">
+      <section class="bg-white p-6 mb-6" style="margin-top: 70px;">
         <h2 class="text-2xl font-bold mb-2" id="project-title">
           Project Details
         </h2>
@@ -268,6 +235,8 @@
         </div>
       </div>
     </footer>
+
+    
     <script src="project.js"></script>
     <script src="header.js"></script>
   </body>
